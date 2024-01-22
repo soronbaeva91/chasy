@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8/">
+	<title></title>
+	<style>
+		.circle {
+				height: 400px;
+				width: 400px;
+				border:20px solid #4F518C;
+				border-radius: 220px;
+				background-color: #DABFFF;
+				position: relative;
+				margin:auto;
+				}
+		.center {
+				height: 50px;
+				width: 50px;
+				border-radius: 25px;
+				background-color: #907AD6;
+				position: absolute;
+				left:175px;
+				top:175px;
+				z-index: 1;
+				}
+		.second {
+				height: 180px;
+				width: 5px;
+				background-color: #7FDEFF;
+				position: absolute;
+				left:198px;
+				top:20px;
+				animation: second 5s linear 0s normal none infinite;
+				transform-origin: 2px 180px;
+				}
+		.minute {
+				height: 160px;
+				width: 10px;
+				background-color: #4F518C;
+				position: absolute;
+				left:195px;
+				top:40px;
+				animation: minute 10s linear 0s normal none infinite;
+				transform-origin: 50% 160px;
+				}
+		.hour {
+				height: 100px;
+				width: 10px;
+				background-color: #2C2A4A;
+				position: absolute;
+				left:195px;
+				top:100px;
+				animation: hour 20s linear 0s normal none infinite;
+				transform-origin: 50% 100px; 
+			}
+		@keyframes second {
+			0% {}
+			100% {transform:rotate(360deg);
+				}}
+		@keyframes minute {
+			0% {}
+			100% {transform:rotate(360deg);
+				}}
+		@keyframes hour {
+			0% {}
+			100% {transform:rotate(360deg);
+				}}
+
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="circle">
+		<div class="center"></div>
+		<div class="second"></div>
+		<div class="minute"></div>
+		<div class="hour"></div>
+	</div>	
+
+
+</body>
+</html>
